@@ -1,7 +1,7 @@
 # ============================================================
 #  @misty/dsh-pj 一键安装（GitHub 远程或本地目录均可）
 #  远程一条命令：
-#    powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/misty/dsh-pj/main/install.ps1 | iex"
+#    powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/158668qq/dsh-pj/master/install.ps1 | iex"
 #  本地：
 #    powershell -ExecutionPolicy Bypass -File install.ps1
 #  卸载：
@@ -9,8 +9,8 @@
 # ============================================================
 param(
     [string]$Profile = 'web',
-    [string]$Repo = 'misty/dsh-pj',
-    [string]$Branch = 'main',
+    [string]$Repo = '158668qq/dsh-pj',
+    [string]$Branch = 'master',
     [switch]$Uninstall
 )
 $ErrorActionPreference = 'Stop'

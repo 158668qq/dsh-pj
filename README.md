@@ -1,4 +1,4 @@
-# @misty/dsh-pj
+# @158668qq/dsh-pj
 
 DSH 破甲懒人包插件版 · 作者 **misty** · v0.1.0
 
@@ -18,19 +18,19 @@ DSH 破甲懒人包插件版 · 作者 **misty** · v0.1.0
 
 ### 一条命令（GitHub，推荐）
 
-仓库推到 GitHub 后（假设 `misty/dsh-pj`）：
+仓库推到 GitHub 后（假设 `158668qq/dsh-pj`）：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/misty/dsh-pj/main/install.ps1 | iex"
+powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/158668qq/dsh-pj/master/install.ps1 | iex"
 ```
 
 卸载：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/misty/dsh-pj/main/install.ps1 | iex" -Uninstall
+powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/158668qq/dsh-pj/master/install.ps1 | iex" -Uninstall
 ```
 
-脚本自动完成：从 GitHub 拉包 → 装到 `~/.dsh/plugins/@misty/dsh-pj` → 语法校验 →
+脚本自动完成：从 GitHub 拉包 → 装到 `~/.dsh/plugins/@158668qq/dsh-pj` → 语法校验 →
 写入 profile 的 `dsh.profile.bundles`（自动备份原 package.json）→ 提示重启。
 也支持本地目录直接 `-File install.ps1`。
 
@@ -42,7 +42,7 @@ New-Item -ItemType Directory -Force -Path $dst | Out-Null
 Copy-Item "D:\DSH\dsh-pj\*" $dst -Recurse -Force
 ```
 
-然后把 `"@misty/dsh-pj"` 追加进
+然后把 `"@158668qq/dsh-pj"` 追加进
 `$env:USERPROFILE\.dsh\profiles\web\package.json` 的 `dsh.profile.bundles` 数组，
 重启 DSH、刷新浏览器。
 
@@ -58,7 +58,7 @@ Copy-Item "D:\DSH\dsh-pj" "$env:USERPROFILE\.dsh\plugins\@misty\dsh-pj" -Recurse
 
 ```powershell
 cd "$env:USERPROFILE\.dsh\profiles"
-npm install @misty/dsh-pj --no-save
+npm install @158668qq/dsh-pj --no-save
 ```
 
 ## 发布到 GitHub 的仓库结构
@@ -68,7 +68,7 @@ npm install @misty/dsh-pj --no-save
 ```powershell
 cd D:\DSH\dsh-pj
 git init; git add -A; git commit -m "dsh-pj v0.1.0"
-git remote add origin https://github.com/misty/dsh-pj.git
+git remote add origin https://github.com/158668qq/dsh-pj.git
 git push -u origin main
 ```
 
