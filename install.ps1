@@ -1,4 +1,4 @@
-# ============================================================
+﻿# ============================================================
 #  @misty/dsh-pj 一键安装（GitHub 远程或本地目录均可）
 #  远程一条命令：
 #    powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/158668qq/dsh-pj/master/install.ps1 | iex"
