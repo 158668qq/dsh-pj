@@ -1,0 +1,38 @@
+{
+  "name": "@misty/dsh-pj",
+  "version": "0.1.0",
+  "description": "DSH 破甲懒人包插件版（作者 misty）：内置 151 个技能包自动安装到 ~/.dsh/skills，注册 pj_status 工具与 /pj 命令，前端显示状态条。",
+  "author": "misty",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "skills/",
+    "prompts/",
+    "shield-protocol.md",
+    "AGENTS.md",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/client.js"
+  },
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "cordis", "misty"],
+  "license": "MIT",
+  "engines": { "node": ">=22.19.0" }
+}

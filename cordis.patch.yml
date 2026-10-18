@@ -1,0 +1,6 @@
+# @misty/dsh-pj bundle 层：挂载进 profile bundle 树
+- insert:
+    - id: dsh-pj
+      name: '@misty/dsh-pj'
+      config:
+        enabled: true
